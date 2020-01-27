@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Nicholas Rodgers">
+  <title>Game Loop</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <div id="gameLoop">
+    <header>
+      <h1>Browser GameLoop</h1>
+    </header>
+    <main>
+      <div id="events"></div>
+      <div id="form">
+          <ul id="formInputs">
+            <li>
+              <label>Name:</label>
+              <input id="nameInput" type="text">
+            </li>
+            <li>
+              <label>Interval (ms):</label>
+              <input
+                id="intervalInput"
+                min="1"
+                type="number"
+                stpe="1"
+              >
+            </li>
+            <li>
+              <label># Times:</label>
+              <input 
+                id="repeatInput" 
+                min="1" 
+                type="number"
+                step="1"
+              >
+            </li>
+            <li id="addEventButton">
+              <button 
+                id="submitForm" 
+                onclick="addEvent()"
+              >
+                Add Event
+              </button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>Created for CS5410</p>
+    </footer>
+  </div>
+</body>
+
+</html>
